@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.main, button{
+    font-family: "Libre Baskerville", serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculadora {
+    background-color: #9babb8;
+    padding: 20px;
+    border: 1px solid #354259;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    max-width:300px;
+}
+
+.calculadora_result, .calculadora_button {
+    background-color: #d7c0ae;
+    color: #354259;
+    border: 1px solid #354259;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.calculadora_result{
+    grid-column: 1 / span 4;
+    text-align: end;
+    background-color: rgb(246, 249, 252);
+}
+
+.calculadora_button {
+    cursor: pointer;
+}
+
+.calculadora_button:hover {
+    background-color: #d2b7a2;
+}
